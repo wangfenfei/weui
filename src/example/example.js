@@ -93,7 +93,7 @@ $(function () {
             if (!found) {
                 var html = $(config.template).html();
                 var $html = $(html).addClass('js_show').addClass(config.name);
-                $html.insertBefore(stack.dom);
+                $html.insertBefore(stack.dom[0]);
 
                 if (!config.isBind) {
                     this._bind(config);
